@@ -25,8 +25,8 @@ export const storage = defineStorage({
         ],
 
         'clients/samsung/reports/*': [
-            allow.groups(['admin', 'manager', 'samsung-admin', 'samsung-manager', 'samsung-user']).to(['read']),
-            allow.groups(['samsung-admin', 'samsung-manager']).to(['write', 'delete'])
+            allow.groups(['admin', 'manager', 'samsung-admin', 'samsung-manager']).to(['read', 'write', 'delete']),
+            allow.groups(['samsung-user']).to(['read'])
         ],
 
         // === LG전자 고객사 영역 ===
@@ -40,8 +40,8 @@ export const storage = defineStorage({
         ],
 
         'clients/lg/reports/*': [
-            allow.groups(['admin', 'manager', 'lg-admin', 'lg-manager', 'lg-user']).to(['read']),
-            allow.groups(['lg-admin', 'lg-manager']).to(['write', 'delete'])
+            allow.groups(['admin', 'manager', 'lg-admin', 'lg-manager']).to(['read', 'write', 'delete']),
+            allow.groups(['lg-user']).to(['read'])
         ],
 
         // === 현대자동차 고객사 영역 ===
@@ -55,8 +55,8 @@ export const storage = defineStorage({
         ],
 
         'clients/hyundai/reports/*': [
-            allow.groups(['admin', 'manager', 'hyundai-admin', 'hyundai-manager', 'hyundai-user']).to(['read']),
-            allow.groups(['hyundai-admin', 'hyundai-manager']).to(['write', 'delete'])
+            allow.groups(['admin', 'manager', 'hyundai-admin', 'hyundai-manager']).to(['read', 'write', 'delete']),
+            allow.groups(['hyundai-user']).to(['read'])
         ],
 
         // === 공통 영역 ===
